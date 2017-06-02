@@ -27,8 +27,8 @@ export default class Main extends Component{
 			const hourView = elem.hours.map((hourElem, hourIndex)=>{
 				return (
 					<View key={hourElem.key} style={styles.hourViewCell}>
-						<Text style={styles.hourViewTime}>{hourElem.time}</Text>
-						<Icon style={styles.hourViewIcon} name={hourElem.icon} size={25}></Icon>
+						<Text style={hourIndex === 0 ? [styles.hourViewTime, {fontWeight:"700"}] : styles.hourViewTime}>{hourElem.time}</Text>
+						<Icon style={[styles.hourViewIcon,{color: hourElem.color}]} name={hourElem.icon} size={25}></Icon>
 						<Text style={styles.hourViewDegree}>{hourElem.degree}</Text>
 					</View>
 				)
