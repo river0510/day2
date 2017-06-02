@@ -75,7 +75,7 @@ class Weather extends Component{
               <Text style={styles.degree}>{elem.degree}</Text>
               <Text style={styles.circle}>°</Text>
             </View>
-            <View style={styles.withinDay}>
+            
               <View style={styles.withinDayGeneral}>
                 <View style={styles.withinDayHead}>
                   <Text style={styles.withinDayWeek}>{elem.today.week}</Text>
